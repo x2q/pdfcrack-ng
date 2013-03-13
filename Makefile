@@ -1,8 +1,8 @@
-LIBS = -lpthread
+LIBS = -pthread
 
 CFLAGS= -Wall -Wshadow -Wwrite-strings -Wsign-compare -Wfloat-equal \
 	-Wmissing-noreturn -Wbad-function-cast \
-	-Wmissing-prototypes -Winline -Wredundant-decls -O3
+	-Wmissing-prototypes -Winline -Wredundant-decls -O3 -march=native
 
 all: pdfcrack
 
